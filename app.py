@@ -33,11 +33,11 @@ low_ph_value = 7.5
 # Configure Flask-Mail
 app.config["MAIL_SERVER"] = 'smtp.office365.com'
 app.config["MAIL_PORT"] = 587
-app.config["MAIL_USERNAME"] = "abhayas-cs20048@stu.kln.ac.lk"
-app.config["MAIL_PASSWORD"] = 'Sk19990919..'
+app.config["MAIL_USERNAME"] = ""
+app.config["MAIL_PASSWORD"] = ''
 app.config["MAIL_USE_TLS"] = True
 app.config["MAIL_USE_SSL"] = False
-app.config['MAIL_DEFAULT_SENDER'] = 'apeksha-cs20070@stu.kln.ac.lk'
+app.config['MAIL_DEFAULT_SENDER'] = ''
 app.config['MAIL_DEBUG'] = True
 mail = Mail(app)
 
@@ -58,7 +58,6 @@ migrate = Migrate(app, db)
 db_config = {
     'user': 'admin',
     'password': 'AIBWMS123db',
-    'host': 'aibwms-db.cbk24q4qotkj.ap-southeast-2.rds.amazonaws.com',
     'database': 'AIBWMS_db'
 }
 
